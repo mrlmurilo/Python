@@ -22,19 +22,19 @@ def dimensoesObjeto():
             #cotação
             dimensao = altura*comprimento*largura
 
-            if dimensao < 1000:
+            if (dimensao < 1000):
                 valor = 10
-            elif 1000 <= dimensao < 10000:
+            elif (1000 <= dimensao < 10000):
                 valor = 20
-            elif 10000 <= dimensao < 30000:
+            elif (10000 <= dimensao < 30000):
                 valor = 30
-            elif 30000 <= dimensao < 100000:
+            elif (30000 <= dimensao < 100000):
                 valor = 50
-            elif dimensao >= 100000:
+            elif (dimensao >= 100000):
                 print('Dimensão da altura alta de mais')
                 error = True
             
-            if dimensao < 100000 and dimensao > 0:
+            if (dimensao < 100000 and dimensao > 0):
                 error = False
         except:
             print('Altura, comprimento ou peso inválidos')
@@ -65,20 +65,20 @@ def rotaObjeto():
         except:
             print('Rota inválida')
         
-        if response < 1:
+        if (response < 1):
             print('Rota inválida')
               
-        elif response > 6:
+        elif (response > 6):
             print('Rota inválida')
         else:
             error = False
 
         #cotação
-        if response == 1 or response == 2:
+        if (response == 1 or response == 2):
             multiplicador_1 = 1
-        elif response == 3 or response == 4:
+        elif (response == 3 or response == 4):
             multiplicador_1 = 1.2
-        elif response == 5 or response == 6:
+        elif (response == 5 or response == 6):
             multiplicador_1 = 1.5
         else:
             error = True
@@ -93,18 +93,18 @@ def pesoObjeto():
         try:
             peso = int(input('Insira o peso (kg): '))
 
-            if peso <= 0.1:
+            if (peso <= 0.1):
                 multiplicador_2 = 1
-            elif 0.1 <= peso < 1:
+            elif( 0.1 <= peso < 1):
                 multiplicador_2 = 1.5
-            elif 1 <= peso < 10:
+            elif( 1 <= peso < 10):
                 multiplicador_2 = 2
-            elif 10 <= peso < 30:
+            elif (10 <= peso < 30):
                 multiplicador_2 = 3
-            elif peso >= 30:
+            elif( peso >= 30):
                 print('Peso alto de mais')
             
-            if peso < 30:
+            if (peso < 30):
                 error = False
         except:
             print('Peso inválido')
