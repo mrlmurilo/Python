@@ -1,5 +1,7 @@
-counter = 0
+ru = 4513576
+nome = "Murilo dos Santos Margonar"
 
+counter = 0
 materiais = []
 
 def cadastrarPeca(counter):

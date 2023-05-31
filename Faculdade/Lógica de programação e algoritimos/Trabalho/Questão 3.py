@@ -1,3 +1,6 @@
+ru = 4513576
+nome = "Murilo dos Santos Margonar"
+
 valor = None
 multiplicador_1 = None
 multiplicador_2 = None
